@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+Ämne:    <input id="amne" type="text" name="" value="">
+Poäng:    <input id="poang" type="text" name="" value="">
+Betyg:    <input id="betyg" type="text" name="" value="">
+<br>
+  <button type="button" name="button" onclick="ree()">Klick</button>
+  <p id="output"></p>
+  <p id="outputRäkna"></p>
+
+
+
+
+<script>
+
+  function ree(){
+    var amne =  document.getElementById("amne").value;
+    var poang = parseInt(document.getElementById("poang").value);
+    var betyg = document.getElementById("betyg").value;
+
+    document.getElementById("output").innerHTML+= "Ämne: " + amne + "  Poäng: " + poang + "  Betyg: " + betyg + "<br>" ;
+    let summa = 0;
+    let dict = {
+      a : 20,
+      b : 17.5,
+      c : 15,
+      d : 12.5,
+      e : 10,
+      f : 0
+    };
+  summa = poang * betyg;
+  document.getElementById("outputRäkna").innerHTML+= summa + "<br>"
+
+
+  }
+</script>
+
+
+
+
+  </body>
+
+
+
+
+
+
+
+</html>
